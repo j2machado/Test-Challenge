@@ -1,0 +1,149 @@
+<html ng-app="app">
+	<head>
+		<title> IDBC Challenge </title>
+		<meta charset="utf-8">
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+		<link href="../css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="../css/main.css">
+		<link  href="../css/struct.css" rel="stylesheet">
+		</head>
+
+	<body>
+		<div id="main_con" class="container">
+			<div class="row">
+				<div id="header" class="col-md-12">
+					<div id="h-face-1" class="col-md-4"></div>
+					<div id="h-face-2" class="col-md-4">
+						<div id="logo-pic">
+							<img src="../img/logo.png"/>
+							<img src="../img/pic.png"/>
+						</div>
+					</div>
+					<div id="h-face-3" class="col-md-4">
+						<div id="search">
+
+							<div id="custom-search-input">
+                            <div class="input-group col-md-12">
+                                
+                                <span class="input-group-btn">
+                                    <button name="submit" class="btn btn-danger" type="button">
+                                    	
+                                    </button>
+                                </span>
+                                <!--<section id="hero">
+    								<div class="wrapper">-->
+                                <form id="search">
+                                	<input id="searchBox" type="text" name="search" class="  search-query form-control" placeholder="Search for tweets" />
+                                </form><!--
+                                </div>
+                                </section>-->
+                                
+                            </div>
+                        </div>
+
+
+						</div>
+
+
+
+					</div>
+				</div>
+				<div class="col-md-12">
+					<div id="box">
+
+					</div>
+				</div>
+				<div id="about" class="col-md-12">
+					<div id="aboutContainer"><!--
+						<h2><strong>about me</strong></h2>
+						<span>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scientiam pollicentur, quam non mirum sapientiae cupido patria esse cariorem. 
+						</span>
+						<hr/>
+						<h2> <strong>skills</strong> </h2>
+					-->
+
+
+
+  <div class="loading">Loading...</div>
+  
+					</div>
+
+<section id="results" ng-controller="AppCtrl as ctrl">
+    <div class="list">
+      <p class="title">showing results for: <span>{{searchTerm}}</span></p>
+      <div class="tweet" ng-repeat="tweet in tweets | orderBy:scoreSort">
+        <a class="user-image" ng-href="https://twitter.com/{{tweet.user.screen_name}}"><img src="{{tweet.user.profile_image_url_https}}" alt="{{tweet.user.name}}"></a>
+        <div class="tweet-info">
+          <div class="line1">
+            <a ng-href="https://twitter.com/{{tweet.user.screen_name}}">{{tweet.user.name}}</a>
+            <span class="gray">@{{tweet.user.screen_name}}</span>
+          </div>
+          <a class="tweet-text" ng-href="https://twitter.com/{{tweet.user.screen_name}}/status/{{tweet.id_str}}"><p>{{tweet.text}}</p></a>
+          <div class="line3">
+            <span class="retweets"><i class="fa fa-retweet"></i> {{tweet.retweet_count}}</span>
+            <span class="favorites"><i class="fa fa-heart"></i> {{tweet.favorite_count}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+				</div>
+				
+				
+				
+				<div id="contact" class="col-md-12">
+
+					<div id="contactForm">
+						<h2>
+							<strong>
+								contact me
+							</strong>
+						</h2>
+						<div id="contactLeft" class="col-md-6">
+							<div class="form-group">
+								<input type="text" class="form-control" id="name" placeholder="Name" />
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control" id="email" placeholder="E-mail" />
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control" id="company" placeholder="Company" />
+							</div>
+						</div>
+						<div id="contactRight" class="col-md-6">
+							<textarea class="form-control" type="textarea" id="message" placeholder="Message" maxlength="140" rows="5"></textarea>
+							<button type="button" id="submit" name="submit" class="btn btn-primary pull-right">Send</button>
+						</div>
+					</div>
+
+				</div>
+				<div id="footer" class="col-md-12">
+					<div id="copyright" class="col-md-8">
+						<div id="copycontainer">
+						copyright <span id="copyyear"></span> IDBC Group - Test Site - [Juan José Machado]
+						</div>
+					</div>
+					<div id="socialicons" class="col-md-4">
+						<div id="icontainer">
+							<img src="../img/socialicons/linkedin.png"/>
+							<img src="../img/socialicons/github.png"/>
+							<img src="../img/socialicons/instagram.png"/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="../js/functions.js"></script>
+	<script src="../js/lib/angular.min.js"></script>
+	<script src="../js/lib/jquery.min.js"></script>
+	<script src="../js/scripts.js"></script>
+	<script src="../js/app.js"></script>
+
+	</body>
+</html>
