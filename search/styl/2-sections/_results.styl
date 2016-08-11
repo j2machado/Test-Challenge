@@ -1,0 +1,63 @@
+section#results
+  background-color: #fafafa
+  font-family: "Roboto"
+  display: none
+  .list
+    width: 100%
+    // max-width: 600px
+    margin: 0 auto
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    .title
+      text-align: center
+      font-size: 1.3em
+      letter-spacing: 2px
+      font-weight: 900
+      color: #aaa
+      margin: 3em 0
+      width: 100%
+      span
+        font-size: 1.5em
+        font-family: "Roboto Slab"
+        border-bottom: 5px solid
+        color: $blue
+    .tweet
+      background: $white
+      border-radius: 5px
+      border: 1px solid #ddd
+      margin: 1em
+      padding: 1em
+      display: flex
+      width: 500px
+      .user-image
+        width: 50px
+        img
+          width: 50px
+          border-radius: 5px
+      .tweet-info
+        display: flex
+        flex-direction: column
+        padding-left: 1em
+        .line1
+          a
+            text-decoration: none
+            font-weight: 700
+            color: #333
+          span
+            color: #aaa
+            font-weight: 300
+            font-size: 0.8em
+        .tweet-text
+          text-decoration: none
+          color: #555
+          p
+            margin: 5px 0
+        .line3
+          span
+            font-size: 0.8em
+            color: #aaa
+            i
+              font-size: 1.2em
+          .favorites
+            padding-left: 4em
