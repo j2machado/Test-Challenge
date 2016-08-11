@@ -1,0 +1,142 @@
+body {
+  overflow-x: hidden;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto Slab";
+}
+section {
+  background-color: #fff;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #000;
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+section .wrapper {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: "Roboto";
+}
+.loading {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.7);
+  color: #fff;
+  text-align: center;
+  padding: 50vh 0;
+  font-size: 3em;
+  font-family: "Roboto Slab";
+}
+section#results {
+  background-color: #fafafa;
+  font-family: "Roboto";
+  display: none;
+}
+section#results .list {
+  width: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+section#results .list .title {
+  text-align: center;
+  font-size: 1.3em;
+  letter-spacing: 2px;
+  font-weight: 900;
+  color: #aaa;
+  margin: 3em 0;
+  width: 100%;
+}
+section#results .list .title span {
+  font-size: 1.5em;
+  font-family: "Roboto Slab";
+  border-bottom: 5px solid;
+  color: #4183d7;
+}
+section#results .list .tweet {
+  background: #fff;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  margin: 1em;
+  padding: 1em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 500px;
+}
+section#results .list .tweet .user-image {
+  width: 50px;
+}
+section#results .list .tweet .user-image img {
+  width: 50px;
+  border-radius: 5px;
+}
+section#results .list .tweet .tweet-info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 1em;
+}
+section#results .list .tweet .tweet-info .line1 a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #333;
+}
+section#results .list .tweet .tweet-info .line1 span {
+  color: #aaa;
+  font-weight: 300;
+  font-size: 0.8em;
+}
+section#results .list .tweet .tweet-info .tweet-text {
+  text-decoration: none;
+  color: #555;
+}
+section#results .list .tweet .tweet-info .tweet-text p {
+  margin: 5px 0;
+}
+section#results .list .tweet .tweet-info .line3 span {
+  font-size: 0.8em;
+  color: #aaa;
+}
+section#results .list .tweet .tweet-info .line3 span i {
+  font-size: 1.2em;
+}
+section#results .list .tweet .tweet-info .line3 .favorites {
+  padding-left: 4em;
+}
