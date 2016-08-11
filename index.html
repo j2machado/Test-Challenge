@@ -1,0 +1,203 @@
+<html>
+	<head>
+		<title> IDBC Challenge </title>
+		<meta charset="utf-8">
+		
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/fotorama.css" rel="stylesheet">
+		<link href="css/struct.css" rel="stylesheet">
+		</head>
+
+	<body>
+		<div id="main_con" class="container">
+			<div class="row">
+				<div id="header" class="col-md-12">
+					<div id="h-face-1" class="col-md-4"></div>
+					<div id="h-face-2" class="col-md-4">
+						<div id="logo-pic">
+							<img src="img/logo.png"/>
+							<img src="img/pic.png"/>
+						</div>
+					</div>
+					<div id="h-face-3" class="col-md-4">
+						<div id="search">
+
+							<div id="custom-search-input">
+                            <div class="input-group col-md-12">
+                                
+                                <span class="input-group-btn">
+                                    <button class="btn btn-danger" type="button">
+                                    	
+                                    </button>
+                                </span>
+
+                                <input type="text" class="  search-query form-control" placeholder="Search for tweets" />
+                                
+                            </div>
+                        </div>
+
+
+						</div>
+
+
+
+					</div>
+				</div>
+				<div class="col-md-12">
+					<div id="box">
+
+					</div>
+				</div>
+				<div id="about" class="col-md-12">
+					<div id="aboutContainer">
+						<h2><strong>about me</strong></h2>
+						<span>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scientiam pollicentur, quam non mirum sapientiae cupido patria esse cariorem. 
+						</span>
+						<hr/>
+						<h2> <strong>skills</strong> </h2>
+
+					</div>
+				</div>
+				<div id="skills" class="col-md-12">
+					<div id="skillsContainer">
+						<div class="col-md-3">
+							<div class="uxProgress" id="uxProgress"></div>
+							<span id="uxCaption">UX</span>
+						</div>
+						<div class="col-md-3">
+							<div class="mobileProgress" id="mobileProgress"></div>
+							<span id="mobileCaption">MOBILE</span>
+						</div>
+						<div class="col-md-3">
+							<div class="frontProgress" id="frontProgress"></div>
+							<span id="frontCaption">FRONT</span>
+						</div>
+						<div class="col-md-3">
+							<div class="backProgress" id="backProgress"></div>
+							<span id="backCaption">BACK</span>
+						</div>
+					</div>
+				</div>
+				<div id="slider" class="col-md-12">
+					<div class="fotorama" data-navposition="top" data-width="100%" data-ratio="800/600" data-transition="crossfade" data-loop="true" data-keyboard="true" data-arrows="true">
+	  					<img src="img/slides/1.jpeg">
+	  					<img src="img/slides/2.jpg">
+	  					<img src="img/slides/3.jpeg">
+	  					<img src="img/slides/4.jpg">
+					</div>
+				</div>
+				<div id="projects" class="col-md-12">
+					<div id="projectsHeader">
+						<h1>Projects</h1>
+						<span style="text-align:center;">Proud of what I've worked on/with</span>
+						
+						<ul id="projectsCats">
+							<li>Alles</li>
+							<li id="li-active">UX Design</li>
+							<li>Front-end Development</li>
+							<li>Usability Review</li>
+						</ul>
+					</div>
+					<div class="col-md-12">
+					<div id="projectsBodyFirst">
+						<ul>
+							<li>
+								<figure style="background-color:#349270;">
+								<img src="img/projects/1.png" />
+								</figure>
+								<span>Clini Clowns</span>
+								<p>Front-end Development</p>
+							</li>
+							<li>
+								<figure>
+								<img src="img/projects/2.png" />
+								</figure>
+								<span>Noordhoff Uitgevers</span>
+								<p>Interaction Design</p>
+							</li>
+							<li>
+								<figure>
+								<img src="img/projects/3.png" />
+								</figure>
+								<span>De Bruidssalon</span>
+								<p>UX Design</p>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<figure>
+								<img src="img/projects/4.png" />
+								</figure>
+								<span>Dutch Packaging Association</span>
+								<p>Front-end Development</p>
+							</li>
+							<li>
+								<figure>
+								<img src="img/projects/5.png" />
+								</figure>
+								<span>Get Intrective</span>
+								<p>Front-end ontwikkeling</p>
+							</li>
+							<li>
+								<figure>
+								<img src="img/projects/6.png" />
+								</figure>
+								<span>Bizz Travel</span>
+								<p>Interaction Design</p>
+							</li>
+						</ul>
+					</div>
+					</div>
+				</div>
+				<div id="contact" class="col-md-12">
+
+					<div id="contactForm">
+						<h2>
+							<strong>
+								contact me
+							</strong>
+						</h2>
+						<div id="contactLeft" class="col-md-6">
+							<div class="form-group">
+								<input type="text" class="form-control" id="name" placeholder="Name" />
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control" id="email" placeholder="E-mail" />
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control" id="company" placeholder="Company" />
+							</div>
+						</div>
+						<div id="contactRight" class="col-md-6">
+							<textarea class="form-control" type="textarea" id="message" placeholder="Message" maxlength="140" rows="5"></textarea>
+							<button type="button" id="submit" name="submit" class="btn btn-primary pull-right">Send</button>
+						</div>
+					</div>
+
+				</div>
+				<div id="footer" class="col-md-12">
+					<div id="copyright" class="col-md-8">
+						<div id="copycontainer">
+						copyright <span id="copyyear"></span> IDBC Group - Test Site - [Juan José Machado]
+						</div>
+					</div>
+					<div id="socialicons" class="col-md-4">
+						<div id="icontainer">
+							<img src="img/socialicons/linkedin.png"/>
+							<img src="img/socialicons/github.png"/>
+							<img src="img/socialicons/instagram.png"/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/lib/jquery.min.js"></script>
+		<script src="js/fotorama.js"></script>
+		<script src="js/functions.js"></script>
+		<script src="js/progressbar.min.js"></script>
+
+	</body>
+</html>
