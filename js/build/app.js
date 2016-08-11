@@ -1,0 +1,1 @@
+angular.module("app",[]).controller("AppCtrl",function(t){t.tweets=[],t.searchTerm="",t.safeApply=function(t){var e=this.$root.$$phase;"$apply"==e||"$digest"==e?t&&t():this.$apply(t)},t.scoreSort=function(t){var e=t.retweet_count+t.favorite_count;return-e}});
